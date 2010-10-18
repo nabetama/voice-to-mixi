@@ -28,8 +28,8 @@ my $res = $mixi->get('recent_voice.pl');
 # (5) スクレイピング情報の設定
 my $scraper = scraper {
         process '#voicePost input.#post_key', 'post_key' => '@value';
-            process '#voicePost input.#redirect', 'redirect' => '@value';
-                process '#voicePost input.#defaultValue', 'default_value' => '@value';
+        process '#voicePost input.#redirect', 'redirect' => '@value';
+        process '#voicePost input.#defaultValue', 'default_value' => '@value';
 };
 
 # (6) スクレイピング
